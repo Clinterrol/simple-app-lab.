@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>My First App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clint Errol Nebrao | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
 </head>
 <body>
- <h1>Welcome to My First Application</h1>
- <p>This is a simple prototype.</p>
- <button>Click Me</button>
+
+  <nav>
+    <span class="logo">CEN<mark>.</mark></span>
+    <button id="hamburger">&#9776;</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <small>Available for work</small>
+    <h1>Clint Errol <span>Nebrao</span></h1>
+    <p>Full-Stack Developer crafting fast, functional, and beautiful digital experiences.</p>
+    <a href="projects.html" class="btn">View Projects</a>
+    <a href="contact.html" class="btn outline">Get in Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Clint Errol Nebrao — Built with HTML, CSS & ☕</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
 </body>
 </html>

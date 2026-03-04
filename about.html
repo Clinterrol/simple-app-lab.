@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Clint Errol Nebrao</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <span class="logo">CEN<mark>.</mark></span>
+    <button id="hamburger">&#9776;</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding-top: 7rem;">
+    <small>01 — About</small>
+    <h2>Turning ideas into <em>living</em> interfaces.</h2>
+    <p>I'm a developer who believes great code and great design are inseparable. With 3+ years of experience building web apps, I specialise in React, Node.js, and making things that feel <strong>fast</strong> and <strong>beautiful</strong>.</p>
+    <p>When I'm not coding, I'm hiking, sketching UI concepts, or hunting for the perfect espresso.</p>
+    <ul class="stats">
+      <li><strong>30+</strong> Projects Done</li>
+      <li><strong>12+</strong> Happy Clients</li>
+      <li><strong>3+</strong> Years Experience</li>
+      <li><strong>∞</strong> Cups of Coffee</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <small>02 — Skills</small>
+    <h2>Tech Stack</h2>
+    <ul class="skill-list">
+      <li>⚛️ React</li>
+      <li>🟨 JavaScript</li>
+      <li>🔷 TypeScript</li>
+      <li>🖥️ Node.js</li>
+      <li>🎨 CSS / Sass</li>
+      <li>🗄️ PostgreSQL</li>
+      <li>🐳 Docker</li>
+      <li>☁️ AWS</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Clint Errol Nebrao — Built with HTML, CSS & ☕</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>

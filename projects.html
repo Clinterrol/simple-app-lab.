@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Clint Errol Nebrao</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <span class="logo">CEN<mark>.</mark></span>
+    <button id="hamburger">&#9776;</button>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="projects" style="padding-top: 7rem; max-width: 100%;">
+    <div style="max-width: 68rem; margin: 0 auto;">
+      <small>02 — Projects</small>
+      <h2>Selected Work</h2>
+      <ul class="cards">
+        <li>
+          <h3>🌐 TaskFlow</h3>
+          <span>Web App</span>
+          <p>A real-time project management tool built with React and Firebase. Features drag-and-drop boards and live collaboration.</p>
+          <footer>React · Firebase · CSS Grid</footer>
+        </li>
+        <li>
+          <h3>🛒 ShopLite</h3>
+          <span>E-Commerce</span>
+          <p>Lightweight storefront with cart, checkout, and Stripe integration. Scored 98 on Lighthouse performance.</p>
+          <footer>Next.js · Stripe · Tailwind</footer>
+        </li>
+        <li>
+          <h3>📊 DataPulse</h3>
+          <span>Dashboard</span>
+          <p>Analytics dashboard with real-time charts and exportable CSV reports for a fintech startup.</p>
+          <footer>Vue.js · D3.js · Node.js</footer>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Clint Errol Nebrao — Built with HTML, CSS & ☕</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
